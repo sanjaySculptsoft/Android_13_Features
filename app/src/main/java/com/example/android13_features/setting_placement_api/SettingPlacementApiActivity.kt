@@ -41,11 +41,13 @@ class SettingPlacementApiActivity : AppCompatActivity() {
                 binding?.txtStatus?.text = "Requested Add tile Success"
             }
         }
+        // for api 31
         binding?.settingPlacement31?.setOnClickListener {
             startService(Intent(this, StartAppTileService::class.java))
         }
 
 
+        // requestAddTileService is for api 32+
         binding?.settingPlacement?.setOnClickListener {
             Log.d("TAGG", "onCreate: ${Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU}")
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {

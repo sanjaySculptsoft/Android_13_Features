@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- values-in-rID/strings.xml -->
+<resources>
+    <string name="app_name">Características de Android 13</string>
+    <string name="copy_and_paste">Copiar y pegar</string>
+    <string name="add_app_in_quick_setting">Agregar aplicación en configuración rápida 32+</string>
+    <string name="add_app_in_quick_setting_31">Agregar aplicación en configuración rápida 31</string>
+    <string name="hello_world">¡Hola mundo!</string>
+    <string name="setting_placement_api">Configuración de API de ubicación</string>
+    <string name="per_app_language">idioma por aplicación</string>
+    <string name="reset_to_device_language">Restablecer idioma del dispositivo</string>
+    <string name="hi_there">Halo</string>
+
+</resources>

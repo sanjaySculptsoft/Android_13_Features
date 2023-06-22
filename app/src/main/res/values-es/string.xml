@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fitur Android 13</string>
+    <string name="copy_and_paste">Salin dan Tempel</string>
+    <string name="add_app_in_quick_setting">Tambahkan Aplikasi di Pengaturan Cepat 32+</string>
+    <string name="add_app_in_quick_setting_31">Tambahkan Aplikasi di Pengaturan Cepat 31</string>
+    <string name="hello_world">Halo dunia!</string>
+    <string name="setting_placement_api">Menyetel Api Penempatan</string>
+    <string name="per_app_language">Per-bahasa-aplikasi</string>
+    <string name="reset_to_device_language">Setel Ulang ke Bahasa Perangkat</string>
+    <string name="hi_there">Hola</string>
+
+</resources>

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
         <activity
+            android:name=".per_app_language.PerAppLanguageActivity"
+            android:exported="false" />
+        <activity
             android:name=".setting_placement_api.SettingPlacementApiActivity"
             android:exported="false" />
         <activity
@@ -30,8 +33,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Add the Quick Settings tile service here. -->
+        </activity> <!-- Add the Quick Settings tile service here. -->
         <service
             android:name=".setting_placement_api.StartAppTileService"
             android:exported="true"

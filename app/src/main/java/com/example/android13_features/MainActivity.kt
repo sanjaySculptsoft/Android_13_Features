@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.android13_features.copy_and_paste.CopyAndPasteActivity
 import com.example.android13_features.databinding.ActivityMainBinding
+import com.example.android13_features.downgradable_permission.DowngradablePermissionActivity
 import com.example.android13_features.per_app_language.PerAppLanguageActivity
 import com.example.android13_features.setting_placement_api.SettingPlacementApiActivity
 import com.example.android13_features.ui.theme.Android13_featuresTheme
@@ -34,6 +35,9 @@ class MainActivity : ComponentActivity() {
         }
         binding?.perAppLanguage?.setOnClickListener {
             PerAppLanguageActivity.start(this)
+        }
+        binding?.downGradablePermissionDemo?.setOnClickListener {
+            DowngradablePermissionActivity.start(this)
         }
     }
 }

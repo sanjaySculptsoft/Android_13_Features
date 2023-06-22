@@ -9,3 +9,6 @@ Android 13 New Features Api's and changes
 
 ## Clipboard preview
 ![clipboard_preview](https://developer.android.com/static/images/about/versions/13/new-copy-paste-UI.gif)
+
+## Per-app language preferences
+

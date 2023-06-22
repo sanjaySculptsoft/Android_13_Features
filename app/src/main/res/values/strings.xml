@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Android 13 features</string>
     <string name="copy_and_paste">Copy And Paste</string>
+    <string name="add_app_in_quick_setting">Add App in Quick Setting 32+</string>
+    <string name="add_app_in_quick_setting_31">Add App in Quick Setting 31</string>
+
 </resources>

@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.android13_features.copy_and_paste.CopyAndPasteActivity
 import com.example.android13_features.databinding.ActivityMainBinding
+import com.example.android13_features.setting_placement_api.SettingPlacementApiActivity
 import com.example.android13_features.ui.theme.Android13_featuresTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,6 +27,9 @@ class MainActivity : ComponentActivity() {
 
         binding?.copyAndPatse?.setOnClickListener {
             CopyAndPasteActivity.start(this)
+        }
+        binding?.settingPlacement?.setOnClickListener {
+            SettingPlacementApiActivity.start(this)
         }
     }
 }

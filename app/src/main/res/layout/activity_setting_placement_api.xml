@@ -10,14 +10,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/copyAndPatse"
+        tools:context=".setting_placement_api.SettingPlacementApiActivity">
+        <TextView
+            android:id="@+id/txtStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/copy_and_paste"
-            android:padding="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/settingPlacement_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_app_in_quick_setting_31"
+            android:padding="10dp"
             android:layout_marginTop="30dp"
             android:textColor="@color/white"
             android:background="@drawable/bg_round_red_10dp"
@@ -29,14 +37,15 @@
             android:id="@+id/settingPlacement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Setting Placement Api"
-            android:padding="15dp"
+            android:text="@string/add_app_in_quick_setting"
+            android:padding="10dp"
             android:layout_marginTop="30dp"
             android:textColor="@color/white"
             android:background="@drawable/bg_round_red_10dp"
-            app:layout_constraintTop_toBottomOf="@id/copyAndPatse"
+            app:layout_constraintTop_toBottomOf="@id/settingPlacement_31"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.WRITE_CLIPBOARD" />
+
     <application
         android:allowBackup="true"
-        android:theme="@style/Theme.AppCompat.Light"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
+        <activity
+            android:name=".setting_placement_api.SettingPlacementApiActivity"
+            android:exported="false" />
         <activity
             android:name=".copy_and_paste.CopyAndPasteActivity"
             android:exported="false" />
@@ -26,6 +31,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- Add the Quick Settings tile service here. -->
+        <service
+            android:name=".setting_placement_api.StartAppTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:label="Android 13 features"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

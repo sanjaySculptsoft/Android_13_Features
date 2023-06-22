@@ -19,7 +19,7 @@ import com.example.android13_features.databinding.ActivityCopyAndPasteBinding
 import com.google.android.material.snackbar.Snackbar
 
 class CopyAndPasteActivity : AppCompatActivity() {
-    var binding:ActivityCopyAndPasteBinding? = null
+    private var binding:ActivityCopyAndPasteBinding? = null
 
     companion object{
         @JvmStatic
@@ -33,6 +33,7 @@ class CopyAndPasteActivity : AppCompatActivity() {
         binding = ActivityCopyAndPasteBinding.inflate(layoutInflater)
         binding?.apply {
             setContentView(this.root)
+            lifecycleOwner = this@CopyAndPasteActivity
         }
 
         // Setup button click listeners

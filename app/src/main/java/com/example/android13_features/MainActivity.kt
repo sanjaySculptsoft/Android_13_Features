@@ -17,9 +17,17 @@ import com.example.android13_features.downgradable_permission.DowngradablePermis
 import com.example.android13_features.per_app_language.PerAppLanguageActivity
 import com.example.android13_features.setting_placement_api.SettingPlacementApiActivity
 import com.example.android13_features.ui.theme.Android13_featuresTheme
+import android.os.Build
+import android.widget.Toast
+import android.window.OnBackInvokedCallback
+import android.window.OnBackInvokedDispatcher
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
+import com.example.android13_features.predictive_back_gesture.PredictiveBackGestureActivity
 
 class MainActivity : ComponentActivity() {
     var binding:ActivityMainBinding? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -39,6 +47,10 @@ class MainActivity : ComponentActivity() {
         binding?.downGradablePermissionDemo?.setOnClickListener {
             DowngradablePermissionActivity.start(this)
         }
+        binding?.backGestureBtn?.setOnClickListener {
+            PredictiveBackGestureActivity.start(this)
+        }
+
     }
 }
 

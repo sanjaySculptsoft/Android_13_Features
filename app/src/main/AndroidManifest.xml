@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WRITE_CLIPBOARD" />
-
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
+        <activity
+            android:name=".predictive_back_gesture.PredictiveBackGestureActivity"
+            android:exported="false" />
         <activity
             android:name=".downgradable_permission.DowngradablePermissionActivity"
             android:exported="false" />
